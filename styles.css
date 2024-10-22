@@ -1,0 +1,23 @@
+body{ 
+    text-align: center; 
+    background-color: aqua; 
+} 
+a{ 
+    font-size: xx-large; 
+    text-align: center; 
+    color: blue; 
+} 
+#list1{ 
+    font-size: xx-large; 
+    text-align: center; 
+    color: rgb(100, 67, 233); 
+} 
+#list2{ 
+    font-size: xx-large; 
+    text-align: center; 
+    color: magenta; 
+} 
+ 
+#list3{ 
+    font-size: xx-large; 
+    text-align: center;
