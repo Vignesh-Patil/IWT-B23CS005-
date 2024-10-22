@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My IWT Lab Assignments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background-color: #333;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        section h2 {
+            color: #6a5acd;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rahul's IWT Lab Assignments</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#lab1" class="nav-link">Lab 1</a></li>
+            <li><a href="#lab2" class="nav-link">Lab 2</a></li>
+            <li><a href="#lab3" class="nav-link">Lab 3</a></li>
+            <li><a href="#lab4" class="nav-link">Lab 4</a></li>
+            <li><a href="#lab5" class="nav-link">Lab 5</a></li>
+            <li><a href="#lab6" class="nav-link">Lab 6</a></li>
+            <li><a href="#lab7" class="nav-link">Lab 7</a></li>
+            <li><a href="#lab8" class="nav-link">Lab 8</a></li>
+        </ul>
+    </nav>
+
+    <section id="lab1">
+        <h2>Lab 1</h2>
+        <p><a href="port.html">View Lab 1 Assignment</a></p>
+    </section>
+
+    <section id="lab2">
+        <h2>Lab 2</h2>
+        <p><a href="lab2.html">View Lab 2 Assignment</a></p>
+    </section>
+
+    <section id="lab3">
+        <h2>Lab 3</h2>
+        <p><a href="lab3.html">View Lab 3 Assignment</a></p>
+    </section>
+    <section id="lab4">
+        <h2>Lab 4</h2>
+        <p><a href="lab4.html">View Lab 4 Assignment</a></p>
+    </section>
+    <section id="lab5">
+        <h2>Lab 5</h2>
+        <p><a href="img.html">View Lab 5 Assignment</a></p>
+    </section>
+    <section id="lab6">
+        <h2>Lab 6</h2>
+        <p><a href="lab6.html">View Lab 6 Assignment</a></p>
+    </section>
+    <section id="lab7">
+        <h2>Lab 7</h2>
+        <p><a href="lab7.html">View Lab 7 Assignment</a></p>
+    </section>
+    <section id="lab8">
+        <h2>Lab 8</h2>
+        <p><a href="lab8.html">View Lab 8 Assignment</a></p>
+    </section>
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+        window.addEventListener('scroll', () => {
+            let fromTop = window.scrollY;
+            
+            navLinks.forEach(link => {
+                let section = document.querySelector(link.hash);
+
+                if (
+                    section.offsetTop <= fromTop &&
+                    section.offsetTop + section.offsetHeight > fromTop
+                ) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
